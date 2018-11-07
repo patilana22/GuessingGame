@@ -4,8 +4,17 @@
 # Put your comment block header here
 # 
 #
-#
-#
+#!/usr/bin/python
+
+
+
+# @author Anand Patil
+# @version November 7, 2018
+# @course Programming 1
+# @assign.ment Guessing Game
+# @descrip.tion Guessing Game
+
+
 # This program picks a random number between 1 and 10 and allows a 
 # user to try to guess it.  The user gets one try.
 #
