@@ -9,10 +9,10 @@ global names
 global answer
 answer = []
 global bigString
-bigString = ""
+bigString = " "
 guess = True
 
-bigString.
+
 ##Code!
 
 def genRand(between, to):
@@ -22,11 +22,11 @@ def genRand(between, to):
 
 def checkinput(input, number, n):
     if input < number:
-        bigString.__add__(str(n) + ", your guess was too low.")
+        bigString + "\n" + str(n) + ", your guess was too low."
     elif input > number:
-        bigString.__add__(str(n) + ", your guess was too high.")
+        bigString + "\n" + str(n) + ", your guess was too high."
     else:
-        bigString.__add__(str(n) + ", your guess was CORRECT!")
+        bigString + "\n" + str(n) + ", your guess was CORRECT!"
 
 
 def singleplayer():
@@ -129,7 +129,8 @@ def ThreePlus(names, i):
     while True:
         while iC < i:
             name = names[iC]
-            checkinput(input(str(name) + ", enter your guess: "), number, name)
+            s = raw_input(str(name) + ", enter your guess: ")
+            checkinput(s, number, name)
             iC += 1
         print bigString
         iC = 0
