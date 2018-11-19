@@ -8,9 +8,11 @@ global mode
 global names
 global answer
 answer = []
+global bigString
+bigString = ""
 guess = True
 
-
+bigString.
 ##Code!
 
 def genRand(between, to):
@@ -18,13 +20,13 @@ def genRand(between, to):
     i = random.randrange(between, to)
     return i
 
-def checkinput(input, number):
+def checkinput(input, number, n):
     if input < number:
-        answer.append("LOW")      
+        bigString.__add__(str(n) + ", your guess was too low.")
     elif input > number:
-        answer.append("HIGH")      
+        bigString.__add__(str(n) + ", your guess was too high.")
     else:
-        answer.append("CORRECT")      
+        bigString.__add__(str(n) + ", your guess was CORRECT!")
 
 
 def singleplayer():
@@ -127,9 +129,11 @@ def ThreePlus(names, i):
     while True:
         while iC < i:
             name = names[iC]
-            checkinput(input(str(name) + ", enter your guess: "), number)
+            checkinput(input(str(name) + ", enter your guess: "), number, name)
             iC += 1
-        print answer
+        print bigString
+        iC = 0
+        
         
         
     
